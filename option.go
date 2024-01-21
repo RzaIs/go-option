@@ -5,7 +5,7 @@ type Option[T any] struct {
 	value   *T
 }
 
-func NewOption[T any](value *T) Option[T] {
+func New[T any](value *T) Option[T] {
 	var present bool
 
 	if value == nil {
